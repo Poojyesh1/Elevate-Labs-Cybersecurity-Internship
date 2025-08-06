@@ -48,7 +48,7 @@ Other hosts had mostly filtered or closed ports with no significant exposure.
 ## 🖼️ Screenshots
 
 ### ✅ IP of Host Device
-![Host IP](screenshots/nmap_scan_output.png)
+<img width="935" height="325" alt="Image" src="https://github.com/user-attachments/assets/c1479df4-561d-4ffa-b982-671ed5d57ae2" />
 
 ### ✅ Nmap Scan Output
 ![Nmap Scan](screenshots/nmap_scan_output.png)
