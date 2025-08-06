@@ -15,7 +15,7 @@ To discover open ports on devices within the local network using Nmap, and optio
 
 ## 🌐 IP Range Scanned
 
-- Local IP Address: `192.168.1.136`
+- Local IP Address: `192.168.1.124`
 - Subnet Range: `192.168.1.0/24`
 
 ---
@@ -23,8 +23,8 @@ To discover open ports on devices within the local network using Nmap, and optio
 ## 💻 Commands Used
 
 ```bash
-ifconfig 192.168.1.136
-nmap -sS 192.168.1.0/24 -oN scan_results.txt
+ifconfig 192.168.1.124
+nmap -sS 192.168.1.0/24
 ```
 
 ---
@@ -33,15 +33,16 @@ nmap -sS 192.168.1.0/24 -oN scan_results.txt
 
 6 devices responded within the scanned subnet.
 
-Device `192.168.1.128` had several open ports, including:
+Device `192.168.1.124` had several open ports, including:
 
 - **Port 22** – SSH  
-- **Port 80** – HTTP  
-- **Port 139/445** – SMB  
-- **Port 3306** – MySQL  
-- **Port 3389** – RDP  
+- **Port 80** - http
+- **Port 135** - msrpc
+- **Port 1801** - msmq
+- **Port 2103** - zephyr-clt
+- **Port 8443** - https-alt
 
-Other hosts had mostly filtered or closed ports with no significant exposure.
+Other hosts had mostly filtered.
 
 ---
 
@@ -58,14 +59,15 @@ Other hosts had mostly filtered or closed ports with no significant exposure.
 
 #### Filter used:
 ```bash
-tcp.flags.syn == 1 && tcp.flags.ack == 0
+ip.addr == 192.168.1.124
 ```
 
 ---
 
 ## ✅ Conclusion
 
-This task provided hands-on experience in scanning a local network and analyzing the underlying traffic. It helped:
+This task provided hands-on experience in scanning a local network and analyzing the underlying traffic. 
+It helped:
 
 - Identify potentially vulnerable services  
 - Understand how SYN scans operate at the packet level  
