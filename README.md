@@ -51,10 +51,10 @@ Other hosts had mostly filtered or closed ports with no significant exposure.
 <img width="935" height="325" alt="Image" src="https://github.com/user-attachments/assets/c1479df4-561d-4ffa-b982-671ed5d57ae2" />
 
 ### ✅ Nmap Scan Output
-![Nmap Scan](screenshots/nmap_scan_output.png)
+<img width="950" height="464" alt="Image" src="https://github.com/user-attachments/assets/231007f6-ca46-4700-949c-e9401efab798" />
 
 ### ✅ Wireshark SYN Filter
-![Wireshark](screenshots/wireshark_syn_filter.png)
+<img width="931" height="454" alt="Image" src="https://github.com/user-attachments/assets/9487a333-d423-4d0f-a499-f86a886857a3" />
 
 #### Filter used:
 ```bash
