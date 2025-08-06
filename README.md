@@ -33,7 +33,7 @@ nmap -sS 192.168.1.0/24
 
 6 devices responded within the scanned subnet.
 
-Device `192.168.1.124` had several open ports, including:
+Device `192.168.1.141` had several open ports, including:
 
 - **Port 22** – SSH  
 - **Port 80** - http
